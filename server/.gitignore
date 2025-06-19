@@ -21,5 +21,7 @@ yarn.lock
 /src/services/platformData.service.ts
 /src/tests/test/*
 
-
+# Python bytecode
+__pycache__/
+*.py[cod]
 
