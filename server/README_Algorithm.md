@@ -1,5 +1,7 @@
 # ML Matching API
 
+Deployed API link: https://algorithm-api-wy7g.onrender.com/
+
 This service implements an influencer-brand matching engine using weighted cosine similarity. It currently supports Facebook, with the intention of including YouTube and TikTok vectors (configurable via the `platform` field).
 
 Repository Structure
