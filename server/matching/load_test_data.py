@@ -34,7 +34,7 @@ df["vector"] = df.apply(row_to_vector, axis=1)
 client = MongoClient("mongodb+srv://covo:Covo123@covo.dyeab.mongodb.net/?retryWrites=true&w=majority&appName=Covo")
 fb = client["metrics"]["Facebook"]
 
-# 4. Clear out old FB docs, then insert yours
+# 4. Clear out old FB docs and insert new
 fb.delete_many({})
 records = []
 for _, r in df.iterrows():
