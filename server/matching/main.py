@@ -8,6 +8,10 @@ from .algorithm import weighted_cosine_similarity
 app = FastAPI()
 db = MongoDB()
 
+@app.get("/")
+def read_root():
+    return {"message": "Matching Algorithm API is up and running!"}
+
 class MatchRequest(BaseModel):
     target_vector: List[float]
     weights: List[float]
